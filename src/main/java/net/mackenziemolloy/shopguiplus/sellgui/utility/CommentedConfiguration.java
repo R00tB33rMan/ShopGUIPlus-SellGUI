@@ -215,7 +215,7 @@ public final class CommentedConfiguration extends YamlConfiguration {
             contents.append("\n").append(line);
         }
 
-        return contents.isEmpty() ? "" : contents.substring(1);
+        return contents.length() == 0 ? "" : contents.substring(1);
     }
 
     /**
