@@ -73,7 +73,7 @@ public final class CommentedConfiguration extends YamlConfiguration {
      */
     public void syncWithConfig(File file, InputStream resource, String... ignoredSections) throws IOException{
         if (creationFailure) {
-          return;
+            return;
         }
 
         CommentedConfiguration cfg = loadConfiguration(resource);

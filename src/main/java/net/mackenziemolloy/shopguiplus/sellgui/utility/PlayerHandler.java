@@ -71,7 +71,7 @@ public class PlayerHandler {
         Location location = player.getLocation();
         Sound sound = getSound(event);
         if (sound == null) {
-          return;
+            return;
         }
 
         player.playSound(location, sound, volume, pitch);
